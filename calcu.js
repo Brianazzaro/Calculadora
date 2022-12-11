@@ -1,8 +1,8 @@
 
 var operaciones = function (e) {
-    var numero1 = parseFloat(document.getElementById("numero1").nodeValue);
-    var numero2 = parseFloat(document.getElementById("numero2").nodeValue);
-    var result = document.getElementById("resultado");
+    var numero1 = parseFloat(document.getElementById("numero1").value),
+        numero2 = parseFloat(document.getElementById("numero2").value),
+        result = document.getElementById("resultado");
     var operacion = e.target.id;
     if (operacion == "suma") {
         var resultado = numero1 + numero2;
